@@ -1,0 +1,26 @@
+/* Cambiar el tipo de letra, color y tamaño del texto del navbar */
+.navbar {
+    font-family:Georgia, 'Times New Roman', Times, serif, cursive; 
+    color: #ffffff; /* Cambia el color del texto */
+    font-size: 16px; /* Cambia el tamaño del texto */
+  }
+  
+  .navbar-brand {
+    font-size: 20px; /* Tamaño del texto del navbar brand */
+    color: #A4978E; /* Color del texto del navbar brand */
+  }
+  
+  .nav-link {
+    font-size: 16px; /* Tamaño del texto de los enlaces de navegación */
+    color: #ffffff; /* Color del texto de los enlaces de navegación */
+  }
+  
+  .nav-link:hover {
+    color: #e8cf43; /* Color del texto de los enlaces de navegación al pasar el mouse */
+  }
+  
+  /* Cambiar el color de fondo del navbar */
+  .navbar-light {
+    background-color: #333333; /* Cambia el color de fondo del navbar */
+  }
+  
