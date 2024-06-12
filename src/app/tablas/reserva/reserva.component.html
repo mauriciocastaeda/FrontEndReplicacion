@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Reservas</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: calc(100% - 30px); /* Ajusta el ancho de la tabla para considerar el espacio de 15px a cada lado */
+      margin: 15px; /* Añade espacio de 15px entre la tabla y los bordes */
+      border: 2px solid black;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 8px;
+      border: 1px solid black;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>ID de Reserva</th>
+        <th>ID de Usuario</th>
+        <th>ID de Boleto</th>
+        <th>Cantidad</th>
+        <th>Fecha de Reserva</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se mostrarán los datos de la base de datos -->
+      <tr>
+        <td>1</td>
+        <td>IDUsuario1</td>
+        <td>IDBoleto1</td>
+        <td>1</td>
+        <td>Fecha1</td>
+        <td>Estado1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>IDUsuario2</td>
+        <td>IDBoleto2</td>
+        <td>2</td>
+        <td>Fecha2</td>
+        <td>Estado2</td>
+      </tr>
+      <!-- Puedes agregar más filas según sea necesario -->
+    </tbody>
+  </table>
+</body>
+</html>
