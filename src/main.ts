@@ -5,7 +5,5 @@ import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { routes } from './app/app.routes';
 import 'bootstrap';
 
-bootstrapApplication(AppComponent,{
-  providers: [provideRouter(routes, withComponentInputBinding())]
-})
+bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));

@@ -35,22 +35,13 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Aquí se mostrarán los datos de la base de datos -->
-      <tr>
-        <td>1</td>
-        <td>Nombre1</td>
-        <td>Descripción1</td>
-        <td>Fecha1</td>
-        <td>LugarID1</td>
+      <tr *ngFor="let evento of eventos">
+        <td>{{ evento.evento_id }}</td>
+        <td>{{ evento.nombre }}</td>
+        <td>{{ evento.descripcion }}</td>
+        <td>{{ evento.fecha_evento }}</td>
+        <td>{{ evento.lugar_id }}</td>
       </tr>
-      <tr>
-        <td>2</td>
-        <td>Nombre2</td>
-        <td>Descripción2</td>
-        <td>Fecha2</td>
-        <td>LugarID2</td>
-      </tr>
-      <!-- Puedes agregar más filas según sea necesario -->
     </tbody>
   </table>
 </body>

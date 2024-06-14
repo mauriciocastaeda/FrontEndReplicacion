@@ -38,29 +38,18 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Aquí se mostrarán los datos de la base de datos -->
-      <tr>
-        <td>1</td>
-        <td>Nombre1</td>
-        <td>Apellido1</td>
-        <td>correo1example.com</td>
-        <td>********</td>
-        <td>1234567890</td>
-        <td>Dirección1</td>
-        <td>2024-06-11 12:34:56</td>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.usuario_id }}</td>
+        <td>{{ usuario.nombre }}</td>
+        <td>{{ usuario.apellido }}</td>
+        <td>{{ usuario.correo_electronico }}</td>
+        <td>{{ '********' }}</td>
+        <td>{{ usuario.telefono }}</td>
+        <td>{{ usuario.direccion }}</td>
+        <td>{{ usuario.fecha_registro }}</td>
       </tr>
-      <tr>
-        <td>2</td>
-        <td>Nombre2</td>
-        <td>Apellido2</td>
-        <td>correo2example.com</td>
-        <td>********</td>
-        <td>0987654321</td>
-        <td>Dirección2</td>
-        <td>2024-06-12 01:23:45</td>
-      </tr>
-      <!-- Puedes agregar más filas según sea necesario -->
     </tbody>
   </table>
 </body>
 </html>
+

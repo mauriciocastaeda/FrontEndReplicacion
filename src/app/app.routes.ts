@@ -6,7 +6,7 @@ import { GlamourComponent } from './glamour/glamour.component';
 import { UsuarioComponent } from './tablas/usuario/usuario.component';
 import { EstadisticasComponent } from './tablas/estadisticas/estadisticas.component';
 import { LoginComponent } from './tablas/login/login.component';
-import { BoletosComponent } from './tablas/boletos/boletos.component';
+import { BoletoComponent } from './tablas/boletos/boletos.component';
 
 export const routes: Routes = [
     {path: '', component: GlamourComponent}, //ruta principal
@@ -16,7 +16,7 @@ export const routes: Routes = [
     {path: 'usuario', component:UsuarioComponent},
     {path: 'estadisticas', component:EstadisticasComponent},
     {path: 'login', component:LoginComponent},
-    {path: 'boletos', component:BoletosComponent},
+    {path: 'boletos', component:BoletoComponent},
     { path: '**', redirectTo: '' } //ruta de captura
 ];
 

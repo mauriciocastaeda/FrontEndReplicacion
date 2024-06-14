@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabla de Eventos</title>
+  <title>Tabla de Boletos</title>
   <style>
     table {
       border-collapse: collapse;
@@ -27,30 +27,21 @@
   <table>
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Nombre del Evento</th>
+        <th>ID de Boleto</th>
+        <th>ID de Evento</th>
         <th>Tipo de Boleto</th>
         <th>Precio</th>
         <th>Cantidad Disponible</th>
       </tr>
     </thead>
     <tbody>
-      <!-- Aquí se mostrarán los datos de la base de datos -->
-      <tr>
-        <td>1</td>
-        <td>Nombre1</td>
-        <td>Descripción1</td>
-        <td>Fecha1</td>
-        <td>LugarID1</td>
+      <tr *ngFor="let boleto of boletos">
+        <td>{{ boleto.boleto_id }}</td>
+        <td>{{ boleto.evento_id }}</td>
+        <td>{{ boleto.tipo_boleto }}</td>
+        <td>{{ boleto.precio }}</td>
+        <td>{{ boleto.cantidad_disponible }}</td>
       </tr>
-      <tr>
-        <td>2</td>
-        <td>Nombre2</td>
-        <td>Descripción2</td>
-        <td>Fecha2</td>
-        <td>LugarID2</td>
-      </tr>
-      <!-- Puedes agregar más filas según sea necesario -->
     </tbody>
   </table>
 </body>

@@ -24,34 +24,32 @@
   </style>
 </head>
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Dirección</th>
-        <th>Capacidad</th>
-        <th>Descripción</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Aquí se mostrarán los datos de la base de datos -->
-      <tr>
-        <td>1</td>
-        <td>Nombre1</td>
-        <td>Dirección1</td>
-        <td>Capacidad1</td>
-        <td>Descripción1</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Nombre2</td>
-        <td>Dirección2</td>
-        <td>Capacidad2</td>
-        <td>Descripción2</td>
-      </tr>
-      <!-- Puedes agregar más filas según sea necesario -->
-    </tbody>
-  </table>
+  <div>
+    <h2 style="text-align: center;">Lista de Lugares</h2>
+    <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Dirección</th>
+      <th>Capacidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let lugar of lugares;">
+      <td>{{ lugar.lugar_id }}</td>
+      <td>{{ lugar.nombre }}</td>
+      <td>{{ lugar.direccion }}</td>
+      <td>{{ lugar.capacidad }}</td>
+      <td>{{ lugar.descripcion }}</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  
+  
 </body>
 </html>
+
